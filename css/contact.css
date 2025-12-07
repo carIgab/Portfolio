@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+.camp_contact{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.camp_contact h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.camp_contact .list_contact{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.list_contact .contact_element{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+    height: 250px;
+    background: var(--color-background_elements);
+    border-radius: 20px;
+    transition: 1s;
+}
+.contact_element:hover{
+    width: 260px;
+    height: 270px;
+}
+
+.contact_element img{
+    width: 80px;
+    height: 80px;
+    
+}
+.contact_element a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.camp_contact .form_camp{
+    width: 100%;
+    background: var(--color-background_elements);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 15px;
+}
+
+.form_camp .tittle_form{
+    width: 100%;
+}
+
+.form_camp .camp_input{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.camp_input input{
+    outline: none;
+    border: none;
+    width: 160px;
+    background: none;
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-text);
+    padding: 5px;
+    font-size: 13px;
+
+}
+
+.form_camp textarea{
+    width: 300px;
+    height: 80px;
+    font-size: 13px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.form_camp .camp_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.camp_buttons input{
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.camp_buttons input:hover{
+    transition: 0.5s;
+    width: 120px;
+}
+
+.camp_buttons input[type="reset"]{
+    background: red;
+    color: #fafafa;
+}
+
+.camp_buttons input[type="button"]{
+    background: var(--color-secundary);
+    color: #fafafa;
+}

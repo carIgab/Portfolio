@@ -1,0 +1,109 @@
+.content_about_me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--color-background);
+    gap: 20px;
+    padding: 25px;
+}
+
+.pessoal_about_me{
+    display: block;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+    background: #D8D3C8;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+
+.pessoal_about_me:hover {
+    transform: translateY(-8px); 
+}
+
+.name_about_me{
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 1.5rem;
+    font-weight: 700; 
+    letter-spacing: 5px; 
+    color:var(--color-text); 
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    text-shadow: 
+        1px 1px 0 var(--color-text), 
+        2px 2px 3px var(--color-background_elements); 
+    
+}
+
+.text_about_me{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    background:var(--color-secundary);
+    padding: 25px;
+    border-radius: 20px;
+    color: #fafafa;
+}
+
+.text_about_me h2{
+    font-family: 'Playfair Display', Didot, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.text_about_me p {
+    margin-left: 15px;
+    font-family: Lora, Georgia, serif;
+}
+
+
+
+.techinical_skills_about_me {
+    padding: 20px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.camp_software_skills, .camp_codding_skills, .camp_hobbies_skills, .camp_language_skills{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--color-background_elements);
+    padding: 20px;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.list_software_skills, .list_codding_skills, 
+.list_hobbies_interests, .list_language_speak{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.camp_software_skills li, .camp_codding_skills li,
+.camp_hobbies_skills li, .camp_language_skills li{
+    margin-left: 25px;
+    list-style: none;
+    padding: 10px;
+    background: var(--color-primary);
+    border-radius: 10px;
+    color: var(--color-background);
+    font-family: sans-serif;
+}

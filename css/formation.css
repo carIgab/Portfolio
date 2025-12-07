@@ -1,0 +1,217 @@
+body{
+    align-items: flex-start;
+}
+
+.camp_formation_experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.camp_formation, .camp_experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 600px;
+    background-color: var(--color-background_elements);
+}
+.camp_formation h2, .camp_experience h2{
+    margin-bottom: 10px;
+}
+
+.camp_formation .list_formation, .camp_experience .list_formation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.list_formation .item_list_formation{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+}
+
+.item_list_formation .simbol_list{
+    width: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.simbol_list .point_simbol{
+    width: 2px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+
+.list_formation h4, .list_formation h4{
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--color-text);
+}
+
+.list_formation h3{
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+    color: var(--color-secundary);
+}
+
+.simbol_list .star_simbol{
+    width: 15px;
+    height: 15px; 
+    background-color: var(--color-secundary); 
+    clip-path: polygon(
+        50% 0%,        
+        65% 35%,       
+        100% 50%,     
+        65% 65%,       
+        50% 100%,    
+        35% 65%,       
+        0% 50%,        
+        35% 35%        
+    );
+}
+
+.list_formation .year_formation{
+    margin-right: 10px;
+    width: 130px;
+    flex-wrap: wrap;
+}
+
+.camp_formation_experience li{
+    list-style: none;
+}
+
+@media screen and (max-width: 650px) {
+    .camp_formation, .camp_experience{
+        width: 300px;
+    }
+}
+
+.camp_formation_experience .camp_list_courses{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+    gap: 20px;
+   
+}
+
+.camp_list_courses .list_course{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.list_course .card_formation{
+    height: 270px;
+    width: 250px;
+    background-color: var(--color-background_elements);
+    border-radius: 20px;
+    display: flex;
+    transition: 0.75s;
+}
+
+.card_formation .front_card_formation, .card_formation .back_card_formation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_formation .front_card_formation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.front_card_formation .title_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--color-secundary);
+    padding: 15px;
+    color: #fafafa;
+    border-radius: 20px;
+}
+.title_card h2{
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.3rem;
+}
+
+
+.card_formation .back_card_formation{
+    display: none;
+}
+
+.card_formation:hover{
+    height: 260px;
+    width: 240px;
+}
+
+.card_formation:hover .back_card_formation{
+    display: flex;
+    transition: 0.5s;
+    padding: 12px;
+    gap: 10px;
+    justify-content:flex-start;
+}
+
+.card_formation:hover .front_card_formation{
+    display: none;
+    transition: 0.5s;
+}
+
+.back_card_formation .title_card_back{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title_card_back h2{
+    font-size: 1.25rem;
+    font-family: 'Lora', Georgia, serif;
+    color: var(--color-secundary);
+}
+
+.back_card_formation h3{
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+.back_card_formation input{
+    margin-top: 15px;
+    padding: 6px;
+    background: var(--color-secundary);
+    color: #fafafa;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}

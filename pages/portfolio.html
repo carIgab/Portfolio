@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="shortcut icon" href="../images/img.png" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+<body class="">
+     <header class="header">
+        <nav class="navegador">
+            <ul class="list_pages">
+                <li class="nav_page "><a href="/about.html">Sobre mim</a></li>
+                <li class="nav_page"><a href="/pages/formation.html">Formação</a></li>
+                <li class="nav_page"><a href="/pages/contact.html">Contato</a></li>
+                <li class="nav_page select"><a href="/pages/portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <ul class="option_header" >
+            <li class="theme option" onclick="change_color('about')">
+                <img id="about_img_color" src="/images/color.svg" alt="">
+            </li>
+            <li class="perfil_icon option">
+                <img src="/images/img.png" alt="">
+            </li>
+        </ul>
+    </header>
+
+    <main class="camp_portfolio">
+        <nav class="control_camp_projects">
+            <h1>My projects</h1>
+
+            <ul class="camp_filter_projects">
+                <li class="filter_project filter_search">
+                    <img src="/images/search.svg" alt="icon de pesquisa">
+                    <input type="search" id="input_search" placeholder="Search ..." oninput="filter_search()">
+                </li>
+
+                <li class="filter_project filter_select">
+                    <select name="" id="filter_select_portfolio" onchange="filter_select()">
+                        <option value="">-- Escolha uma linguagem --</option> 
+    
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </li>            
+            </ul>
+        </nav>
+
+        <ul class="camp_projects"></ul>
+    </main>
+
+    <script src="/data/data_projects.js"></script>
+    <script src="../app/app.js"></script>
+    <script>
+        push_projects()
+    </script>
+</body>
+</html>
